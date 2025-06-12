@@ -3,36 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival da Carne</title>
+    <title>Festival da Carne - Delícias e Sabor!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Festival da Carne</h1>
-        </header>
-        <section class="content">
-            <div class="info">
-                <p><strong>Data:</strong> [07/06]</p>
-                <p><strong>Local:</strong> Marechal Cândido Rondon</p>
-                <p><strong>Preço:</strong> R$ 50,00</p>
-            </div>
-            <div class="image">
-                <img src="churrasco.jpg" alt="Churrasco Delicioso">
-            </div>
-        </section>
-        <section class="produtos">
-            <h2>Produtos Deliciosos</h2>
-            <ul>
-                <li>Carne de Boi</li>
-                <li>Carne de Porco</li>
-                <li>Carne de Frango</li>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Festival da Carne</div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre o Evento</a></li>
+                <li><a href="#produtos">Nossos Produtos</a></li>
+                <li><a href="#ingressos">Ingressos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
+        </nav>
+        <div class="hero">
+            <h1>Festival da Carne: Sabor Inesquecível!</h1>
+            <p>O melhor da carne e da gastronomia em Marechal Cândido Rondon.</p>
+            <a href="#ingressos" class="btn-primary">Garanta seu Ingresso!</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="sobre" class="section-card info-section">
+            <h2>Sobre o Festival</h2>
+            <div class="content-grid">
+                <div class="info-details">
+                    <p><strong>Data:</strong> 07 de Junho de 2025</p>
+                    <p><strong>Local:</strong> Marechal Cândido Rondon - PR</p>
+                    <p><strong>Preço do Ingresso:</strong> R$ 50,00</p>
+                    <p>Prepare-se para um dia de sabor, música e muita alegria! O Festival da Carne trará os melhores cortes, preparados por mestres churrasqueiros, para uma experiência gastronômica única.</p>
+                </div>
+                <div class="image-wrapper">
+                    <img src="churrasco.jpg" alt="Churrasco Delicioso do Festival">
+                </div>
+            </div>
         </section>
-        <footer>
-            <p>&copy; 2025 Festival da Carne</p>
-        </footer>
-    </div>
+
+        <section id="produtos" class="section-card produtos-section">
+            <h2>Nossas Delícias</h2>
+            <div class="product-list">
+                <ul>
+                    <li>🥩 **Carne de Boi:** Cortes especiais e suculentos.</li>
+                    <li>🍖 **Carne de Porco:** Costelinhas e linguiças artesanais.</li>
+                    <li>🍗 **Carne de Frango:** Asas e coxas no ponto certo.</li>
+                    <li>🥗 **Acompanhamentos:** Farofa, vinagrete, saladas frescas e mais!</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="ingressos" class="section-card tickets-section">
+            <h2>Ingressos</h2>
+            <p>Ainda não está pronto para a compra! Clique no botão abaixo para ser notificado quando os ingressos estiverem disponíveis.</p>
+            <button id="notifyMeBtn" class="btn-secondary">Me Notifique!</button>
+        </section>
+
+        <section id="contato" class="section-card contact-section">
+            <h2>Entre em Contato</h2>
+            <p>Dúvidas? Sugestões? Fale conosco!</p>
+            <p>Email: contato@festivaldacarne.com</p>
+            <p>Telefone: (45) 91234-5678</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Festival da Carne. Todos os direitos reservados.</p>
+        <p>Desenvolvido com paixão pela carne.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

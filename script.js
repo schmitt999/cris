@@ -1,12 +1,22 @@
-// script.js
-console.log("Página do Festival da Carne carregada!");
-
-// Você pode adicionar interatividade com JavaScript aqui, se necessário.
-// Por exemplo, para atualizar a data dinamicamente:
 document.addEventListener('DOMContentLoaded', function() {
-    const dataElement = document.querySelector('.info p:first-child');
-    if (dataElement) {
-        const dataDoEvento = "30 de Agosto de 2025"; // Exemplo de data
-        dataElement.textContent = `Data: ${dataDoEvento}`;
+    // Botão "Me Notifique!"
+    const notifyMeBtn = document.getElementById('notifyMeBtn');
+
+    if (notifyMeBtn) {
+        notifyMeBtn.addEventListener('click', function() {
+            alert('Agradecemos seu interesse! Você será notificado(a) quando os ingressos estiverem disponíveis.');
+            // Aqui você poderia adicionar uma integração com um serviço de email ou formulário.
+        });
     }
+
+    // Rolagem suave para os links da navegação
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 });
