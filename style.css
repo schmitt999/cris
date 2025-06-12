@@ -20,7 +20,7 @@ body {
 }
 
 header h1 {
-    color: #e44d26; /* Cor tema carne */
+    color: #0d0ae0; /* Cor tema carne */
     margin-bottom: 20px;
 }
 
@@ -33,7 +33,7 @@ header h1 {
 }
 
 .produtos h2 {
-    color: #e44d26;
+    color: #090de7;
     margin-bottom: 15px;
 }
 
@@ -49,5 +49,5 @@ header h1 {
 footer {
     margin-top: 30px;
     font-size: 0.9em;
-    color: #777;
+    color: #131212;
 }
